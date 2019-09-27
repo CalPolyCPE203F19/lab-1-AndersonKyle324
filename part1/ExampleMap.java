@@ -15,10 +15,13 @@ class ExampleMap
       */
 
       for (String key : courseListsByStudentName.keySet()){
+         int unitSum = 0;
          for (Course course : courseListsByStudentName.get(key)) {
-            if (course.getNumUnits() > unitThreshold){
-               overEnrolledStudents.add(course.getName());
-            }
+            unitSum += course.getNumUnits();
+         }
+
+         if (unitSum > unitThreshold){
+            overEnrolledStudents.add(key);
          }
       }
 
