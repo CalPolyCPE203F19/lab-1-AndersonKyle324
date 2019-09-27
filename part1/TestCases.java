@@ -19,7 +19,7 @@ public class TestCases
    @Test
    public void testSimpleIf1 ()
    {
-      assertEquals(1.7, SimpleIf.max(1.2, 1.7), DELTA)
+      assertEquals(1.7, SimpleIf.max(1.2, 1.7), DELTA);
 
    }
 
