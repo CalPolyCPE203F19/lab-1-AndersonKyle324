@@ -24,6 +24,6 @@ class Point
     }
 
     public Point rotate90(){
-        return Point(y * -1, x);
+        return new Point(y * -1, x);
     }
 }
