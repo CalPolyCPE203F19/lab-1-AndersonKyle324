@@ -15,7 +15,7 @@ class ExampleMap
       */
 
       for (List classList : courseListsByStudentName.entrySet()){
-         for (Course course : classList){
+         for (Object course : classList){
             if (course.getNumUnits() > unitThreshold){
                overEnrolledStudents.add(course.getName());
             }
