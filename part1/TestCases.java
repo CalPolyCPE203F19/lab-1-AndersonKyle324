@@ -165,7 +165,29 @@ public class TestCases
 
    @Test
    public void testExampleMap2 () {
-      fail("Missing ExampleMap2");
+      List<String> expected = Arrays.asList("Jeff");
+      Map<String, List<Course>> courseListsByStudent = new HashMap<>();
+
+      courseListsByStudent.put("JROC",
+              Arrays.asList(
+                      new Course("CPE 357", 4),
+                      new Course("ARCH 1", 4),
+                      new Course("CPE 123", 4)));
+      courseListsByStudent.put("Jeff",
+              Arrays.asList(
+                      new Course("CPE 101", 0)));
+      courseListsByStudent.put("Julien",
+              Arrays.asList(
+                      new Course("BIO 305", 4),
+                      new Course("BIO 305", 4)));
+
+      /*
+       * Why compare HashSets here?  Just so that the order of the
+       * elements in the list is not important for this test.
+       */
+      assertEquals(new HashSet<>(expected),
+              new HashSet<>(ExampleMap.highEnrollmentStudents(
+                      courseListsByStudent, 0)));
       /* TO DO: Write another valid test case. */
    }
 }
