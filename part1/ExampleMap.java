@@ -7,7 +7,7 @@ class ExampleMap
    public static List<String> highEnrollmentStudents(
       Map<String, List<Course>> courseListsByStudentName, int unitThreshold)
    {
-//      List<String> overEnrolledStudents = new LinkedList<>();
+      List<String> overEnrolledStudents = new LinkedList<>();
 //
 //      /*
 //         Build a list of the names of students currently enrolled
@@ -22,6 +22,6 @@ class ExampleMap
 //      }
 
 //
-//      return overEnrolledStudents;
+      return overEnrolledStudents;
    }
 }
