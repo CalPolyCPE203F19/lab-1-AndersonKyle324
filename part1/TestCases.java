@@ -20,7 +20,6 @@ public class TestCases
    public void testSimpleIf1 ()
    {
       assertEquals(1.7, SimpleIf.max(1.2, 1.7), DELTA);
-
    }
 
    @Test
@@ -122,7 +121,7 @@ public class TestCases
    @Test
    public void testBetterLoop3 ()
    {
-      assertFalse(BetterLoop.contains(new int[]{8, 0, 8, 8}, 10));
+      assertEquals(false, BetterLoop.contains(new int[]{8, 0, 8, 8}, 10));
       /* TO DO: Write a valid test case where the expected result is false. */
    }
 

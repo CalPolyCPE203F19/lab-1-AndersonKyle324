@@ -17,7 +17,7 @@ class SimpleArray
       */
       for(int i=0; i <= values.length; i++)
       {
-         newValues[i] = Math.sqrt(values[i]);
+         newValues[i] = values[i] * values[i];
       }
 
       return newValues;
