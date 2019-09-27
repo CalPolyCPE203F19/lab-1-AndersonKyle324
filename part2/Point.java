@@ -20,7 +20,7 @@ class Point
         // if (90.0 < angle < 180.0){
 
         // }
-        return Math.atan(y / x) * Math.PI / 180;
+        return Math.atan(y / x);
     }
 
     public Point rotate90(){
