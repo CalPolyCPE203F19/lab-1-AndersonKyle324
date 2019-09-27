@@ -164,7 +164,7 @@ public class TestCases
 
    @Test
    public void testExampleMap2 () {
-      List<String> expected = Arrays.asList("Jeff");
+      List<String> expected = Arrays.asList();
       Map<String, List<Course>> courseListsByStudent = new HashMap<>();
 
       courseListsByStudent.put("JROC",
