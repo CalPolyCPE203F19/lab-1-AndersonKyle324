@@ -14,7 +14,7 @@ class ExampleMap
          in a number of units strictly greater than the unitThreshold.
       */
 
-      Set keys = courseListsByStudentsName.keySet()
+      Set keys = courseListsByStudentsName.keySet();
       for (int key : keys){
          if (courseListsByStudentName.get(key) > unitThreshold){
             overEnrolledStudents.addLast(key);
