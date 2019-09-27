@@ -19,7 +19,7 @@ class ExampleMap
             overEnrolledStudents.add(course.getName());
          }
       }
-   }
+
       return overEnrolledStudents;
    }
 }
