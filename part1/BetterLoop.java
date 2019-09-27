@@ -7,10 +7,10 @@ class BetterLoop
       */
       for (int val : values){
          if (val == v) {
-            return false;
+            return true;
          }
       }
 
-      return true;  // A bit optimistic, but a real boolean value.
+      return false;  // A bit optimistic, but a real boolean value.
    }
 }
