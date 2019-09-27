@@ -186,7 +186,7 @@ public class TestCases
        */
       assertEquals(new HashSet<>(expected),
               new HashSet<>(ExampleMap.highEnrollmentStudents(
-                      courseListsByStudent, 0)));
+                      courseListsByStudent, 100)));
       /* TO DO: Write another valid test case. */
    }
 }
