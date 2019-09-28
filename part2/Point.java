@@ -16,11 +16,7 @@ class Point
     }
 
     public double getAngle(){
-        double newY = y;
-        if (y < 0){
-            newY = -y;
-        }
-        return Math.atan(newY / x);
+        return Math.atan2(y / x);
     }
 
     public Point rotate90(){
